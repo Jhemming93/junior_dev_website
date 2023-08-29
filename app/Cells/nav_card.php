@@ -1,6 +1,6 @@
 <?php $image = "/img-defaults/placeholder.png"; ?>
 
-<div class="card my-2" style="width: 18rem;">
+<div class="card my-2 m-sm-2" style="width: 18rem;">
   <img src="<?= esc($image) ?>" class="card-img-top" alt="<?= esc($title) ?>">
   <div class="card-body">
     <p class="card-text text-center"><?= esc($description)?></p>

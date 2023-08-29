@@ -1,1 +1,1 @@
-<p>Hello about!</p>
+<p>hello <?= $title ?></p>
