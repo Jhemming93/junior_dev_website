@@ -1,0 +1,13 @@
+@use 'colors';
+
+
+
+
+
+.my-bg-green {
+    @include colors.theme;
+}
+
+.my-b-shadow {
+ box-shadow: 0 0 0.2rem #0000001a, 0 0.3rem 0.4rem #0003;
+}
