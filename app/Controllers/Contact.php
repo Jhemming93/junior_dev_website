@@ -19,20 +19,20 @@ class Contact extends BaseController
                 . view('templates/footer');
             }
 
-            $validation->getRuleGroup('contact');
-            $validation->setRuleGroup('contact');
+            // $validation->getRuleGroup('contact');
+            // $validation->setRuleGroup('contact');
+            
+            // $data = $_POST['data'];
             
 
             
 
-            
-
-            if (! $validation->run()){
+            if (! $validation->run($_POST,'contact')){
                 return view('templates/header')
                 . view('pages/contact')
                 . view('templates/footer');
             }
-                // $data['name'] = $this->form_input->post('name');
+            
                 return view('templates/header')
                 . view('pages/contact-success')
                 . view('templates/footer');
