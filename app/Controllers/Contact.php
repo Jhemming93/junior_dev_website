@@ -11,6 +11,7 @@ class Contact extends BaseController
     { 
 
             $validation = \Config\Services::validation();
+            
 
             if (! $this->request->is('post')){
                 return view('templates/header')
