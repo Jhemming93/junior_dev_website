@@ -8,24 +8,30 @@
     
     <?= validation_list_errors('contact_list') ?>
     <?= form_open('contact') ?>
-
-        <div class="mb-3">
-            <label for="name" class="form-label">Your Name</label>
-            <input type="text" class="form-control" id="contactFormName" name="name" placeholder="John Doe" value="<?= set_value('name') ?>">
+      <div class="mb-3">
+            <?php
+            echo form_label('Your Name', 'name', ["class"=>"form-label"]);
+            echo form_input('name', set_value('name') , 'class="form-control" placeholder="John Doe" id="contactFormName"', 'text'); 
+            ?>
         </div>
         <div class="mb-3">
-            <label for="contactEmail" class="form-label">Your Email</label>
-            <input type="email" class="form-control" id="contactEmail" name="email" placeholder="j.doe@gmail.com" value="<?= set_value('email') ?>">
+        <?php
+            echo form_label('Your Email', 'email', ["class"=>"form-label"]);
+            echo form_input('email', set_value('email') , 'class="form-control" placeholder="John@gmail.com" id="contactEmail"', 'email'); 
+            ?>
         </div>
         <div class="mb-3">
-            <label for="subject" class="form-label">Subject</label>
-            <input type="text" class="form-control" id="contactSubject" name="subject" placeholder="Volunteer" value="<?= set_value('subject') ?>">
+        <?php
+            echo form_label('Subject', 'subject', ["class"=>"form-label"]);
+            echo form_input('subject', set_value('subject') , 'class="form-control" placeholder="Volunteer" id="contactSubject"', 'text'); 
+            ?>
         </div>
         <div class="mb-3">
-            <label for="messsage" class="form-label">Message</label>
-            <textarea type="text" class="form-control" id="contactMessage" name="message" placeholder="What do you want to tell us..." value="<?= set_value('subject') ?>"><?= set_value('message')?></textarea>
+        <?php
+            echo form_label('Your Message', 'message', ["class"=>"form-label"]);
+            echo form_textarea('message', set_value('message') , 'class="form-control" placeholder="Whats on your mind?" id="contactMessage" rows="3"'); 
+            ?>
         </div>
-        <div><input type="submit" value="Submit"></div>
+        <div><?php echo form_submit('submit', 'Send Message', 'class="btn btn-custom-prime-green mb-3"') ?></div>
         <?= form_close() ?>
- 
 </div>

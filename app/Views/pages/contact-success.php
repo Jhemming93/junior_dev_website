@@ -1,2 +1,4 @@
 
-<h3>success</h3>
+<h3><?= $result ?></h3>
+
+<p><?php if( isset($debugger)){ echo $debugger;} ?></p>
