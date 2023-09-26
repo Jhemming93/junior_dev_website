@@ -10,7 +10,7 @@ class MainNavMenu
     {
         return '<nav class="navbar navbar-expand-lg container-xl">
         <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
             <img src="/img-defaults/site-logo.png" alt="Site-Logo" width="75" height="75">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +31,7 @@ class MainNavMenu
                 <a class="nav-link" href="/contact">Contact Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/login">Login</a>
+                <a class="nav-link" href="/auth/login">Login</a>
               </li>
             </ul>
           </div>

@@ -7,9 +7,11 @@ class Contact extends BaseController
 
     protected $helpers = ['form'];
 
+        
+
     public function index()
     { 
-
+            
             $validation = \Config\Services::validation();
             $email = \Config\Services::email();
             $request = \Config\Services::request();
