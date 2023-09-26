@@ -20,5 +20,5 @@
         <?= view_cell("MainNavMenu::show"); ?>
     </div>
 
-<main class="container-xl mx-auto p-2">
+<main class="container-xl mx-auto p-2" style="min-height: 90vh;">
    
