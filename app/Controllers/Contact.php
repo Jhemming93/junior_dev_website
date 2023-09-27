@@ -43,12 +43,12 @@ class Contact extends BaseController
                 
                 
                 if(! $email->send()){
-                   $data['result'] = 'Success';
-
-                }else{ 
-                    $data['result'] = 'Failed';
+                   
+$data['result'] = 'Failed';
                     
                     $data['debugger'] = $email->printDebugger();
+                }else{ 
+                    $data['result'] = 'Success';
                 }
 
                 return view('templates/header')
