@@ -45,7 +45,7 @@ class Contact extends BaseController
                 $email->setTo('yegjdev@gmail.com');
 
                 $email->setSubject($subject);
-                $email->setMessage($message . "<br> Sent by:" . $myemail);
+                $email->setMessage($message . "<br> Sent by: " . $myemail);
 
                 $email->send(false);
                 
