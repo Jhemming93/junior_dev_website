@@ -39,7 +39,7 @@ class Contact extends BaseController
                 $email->setSubject($subject);
                 $email->setMessage($message);
 
-                $email->send();
+                $email->send(false);
                 
                 
                 if($email->send(false)){
