@@ -15,6 +15,7 @@ class Contact extends BaseController
             $validation = \Config\Services::validation();
             $email = \Config\Services::email();
             $request = \Config\Services::request();
+            $email->initalize();
 
             if (! $this->request->is('post')){
                 return view('templates/header')
@@ -36,6 +37,7 @@ class Contact extends BaseController
 
                 $email->setFrom($myemail, $name);
                 $email->setTo($recipeint);
+                $email->setCC($recipeint);
 
                 $email->setSubject($subject);
                 $email->setMessage($message);
