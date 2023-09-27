@@ -1,14 +1,18 @@
 ---
 deployment:
       tasks:
-        - export DEPLOYPATH=../../public_html/junior_dev_website/
+        - export DEPLOYPATH=../../junior_dev_website/
         - cp -r app $DEPLOYPATH
-        - cp -r public $DEPLOYPATH
+        - cp -r public ../../public_html/
         - cp -r node_modules $DEPLOYPATH
+        - cp -r build $DEPLOYPATH
         - cp -r builds $DEPLOYPATH
+        - cp -r vendor $DEPLOYPATH
+        - cp -r writable $DEPLOYPATH
         - cp -r composer.json $DEPLOYPATH
         - cp -r composer.lock $DEPLOYPATH
         - cp -r package.json $DEPLOYPATH
+        - cp -r LICENSE $DEPLOYPATH
         - cp -r package-lock.json $DEPLOYPATH
         - cp -r preload.php $DEPLOYPATH
         - cp -r spark $DEPLOYPATH 
