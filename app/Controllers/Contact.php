@@ -33,8 +33,8 @@ class Contact extends BaseController
                 $subject = $request->getPost('subject');
                 $message = $request->getPost('message');
 
-                $email->setFrom('yegjdev@gmail.com', $name);
-                $email->setTo($myemail);
+                $email->setFrom($myemail, $name);
+                $email->setTo('yegjdev@gmail.com');
 
                 $email->setSubject($subject);
                 $email->setMessage($message);
@@ -42,7 +42,7 @@ class Contact extends BaseController
                 $email->send();
                 
                 
-                if($email->send(false)){
+                if(! $email->send()){
                    $data['result'] = 'Success';
 
                 }else{ 
