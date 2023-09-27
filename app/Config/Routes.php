@@ -11,8 +11,8 @@ $routes->get('/', 'Home::index');
 
 
 
-$routes->get('/', 'Contact::index');
-$routes->post('/send', 'Contact::sendEmail');
+$routes->get('contact/', 'Contact::index');
+$routes->post('contact/send', 'Contact::sendEmail');
 
 // Auth
 service('auth')->routes($routes);
