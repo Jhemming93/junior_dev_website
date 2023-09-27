@@ -23,7 +23,9 @@ class Contact extends BaseController
             $request = \Config\Services::request();
 
             if (! $this->request->is('post')){
-               
+                return view('templates/header')
+                . view('pages/contact')
+                . view('templates/footer');
             }
 
             if (! $validation->run($_POST,'contact')){
