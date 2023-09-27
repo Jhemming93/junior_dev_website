@@ -2,6 +2,7 @@
     <h2>Contact Us</h2>
     <p>Want to get involved either as a company or help with volunteering? Have a great idea or just want to reach out?</p>
     <p>We would love to hear from you, so pleace reach out and contact us by filling out the form below.</p>
+    <p>Testing for rooting properly</p>
 </div>
 
 <div>
