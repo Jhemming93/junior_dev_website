@@ -3,7 +3,7 @@ deployment:
       tasks:
         - export DEPLOYPATH=../../junior_dev_website/
         - cp -r app $DEPLOYPATH
-        - cp -a public . ../../public_html/
+        - cp -a public/. ../../public_html/
         - cp -r node_modules $DEPLOYPATH
         - cp -r build $DEPLOYPATH
         - cp -r builds $DEPLOYPATH
