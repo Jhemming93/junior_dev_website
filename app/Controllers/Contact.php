@@ -43,7 +43,7 @@ class Contact extends BaseController
                 
                 if($email->send(false)){
                    $data['result'] = 'Success';
-                    
+                   $data['debugger'] = $email->printDebugger();
                 }else{ 
                     $data['result'] = 'Failed';
                     
