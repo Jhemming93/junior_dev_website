@@ -4,12 +4,18 @@ namespace App\Controllers;
 
 class Contact extends BaseController
 {
-
-    protected $helpers = ['form'];
-
+    public function __construct() {
+        helper(['form', 'url']);
+    }
+  
+    public function index(){
+        return view('templates/header')
+        . view('pages/contact')
+        . view('templates/footer');
+    }
         
 
-    public function index()
+    public function sendEmail()
     { 
             
             $validation = \Config\Services::validation();
@@ -17,9 +23,7 @@ class Contact extends BaseController
             $request = \Config\Services::request();
 
             if (! $this->request->is('post')){
-                return view('templates/header')
-                . view('pages/contact')
-                . view('templates/footer');
+               
             }
 
             if (! $validation->run($_POST,'contact')){
@@ -43,10 +47,8 @@ class Contact extends BaseController
                 
                 if($email->send(false)){
                    $data['result'] = 'Success';
-                   $data['debugger'] = $email->printDebugger();
                 }else{ 
                     $data['result'] = 'Failed';
-                    
                     $data['debugger'] = $email->printDebugger();
                 }
 

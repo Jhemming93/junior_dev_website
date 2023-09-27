@@ -7,8 +7,12 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 
-$routes->get('contact', 'Contact::index');
-$routes->post('contact', 'Contact::index');
+
+
+
+
+$routes->get('/', 'Contact::index');
+$routes->post('/send', 'Contact::sendEmail');
 
 // Auth
 service('auth')->routes($routes);
