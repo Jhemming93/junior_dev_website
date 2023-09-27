@@ -2,13 +2,14 @@
 deployment:
       tasks:
         - export DEPLOYPATH=../../public_html/junior_dev_website/
-        - cp -r application $DEPLOYPATH
-        - cp -r assets $DEPLOYPATH
-        - cp -r css $DEPLOYPATH
-        - cp -r img $DEPLOYPATH
-        - cp -r js $DEPLOYPATH
-        - cp -r system $DEPLOYPATH
-        - cp -r trumbowyg $DEPLOYPATH
-        - cp .htaccess $DEPLOYPATH
-        - cp index.php $DEPLOYPATH
+        - cp -r app $DEPLOYPATH
+        - cp -r public $DEPLOYPATH
+        - cp -r node_modules $DEPLOYPATH
+        - cp -r builds $DEPLOYPATH
+        - cp -r composer.json $DEPLOYPATH
+        - cp -r composer.lock $DEPLOYPATH
+        - cp -r package.json $DEPLOYPATH
+        - cp -r package-lock.json $DEPLOYPATH
+        - cp -r preload.php $DEPLOYPATH
+        - cp -r spark $DEPLOYPATH  
         # need to change the upload paths and how things are aranged for stuff on site and stuff other people upload
