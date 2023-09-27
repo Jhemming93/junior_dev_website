@@ -27,7 +27,6 @@ class Contact extends BaseController
                 . view('pages/contact')
                 . view('templates/footer');
             }else{
-                $email->intialize();
                 $name = $request->getPost('name');
                 $myemail = $request->getPost('email');
                 $subject = $request->getPost('subject');
