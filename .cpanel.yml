@@ -12,5 +12,5 @@ deployment:
         - cp -r package-lock.json $DEPLOYPATH
         - cp -r preload.php $DEPLOYPATH
         - cp -r spark $DEPLOYPATH 
-        - cp -r phpunit.xml.dist $DEPLOYPATH 
+        - cp -r phpunit.xml.dist $DEPLOYPATH  
         # need to change the upload paths and how things are aranged for stuff on site and stuff other people upload
