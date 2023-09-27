@@ -33,8 +33,8 @@ class Contact extends BaseController
                 $subject = $request->getPost('subject');
                 $message = $request->getPost('message');
 
-                $email->setFrom($myemail, $name);
-                $email->setTo('yegjdev@gmail.com');
+                $email->setFrom('yegjdev@gmail.com', $name);
+                $email->setTo($myemail);
 
                 $email->setSubject($subject);
                 $email->setMessage($message);
