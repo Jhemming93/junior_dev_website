@@ -19,7 +19,7 @@ class Contact extends BaseController
     { 
             
             $validation = \Config\Services::validation();
-            $email = \Config\Services::email();
+            
             $request = \Config\Services::request();
 
             if (! $this->request->is('post')){
@@ -33,16 +33,19 @@ class Contact extends BaseController
                 . view('pages/contact')
                 . view('templates/footer');
             }else{
+
+                $email = \Config\Services::email();
+
                 $name = $request->getPost('name');
                 $myemail = $request->getPost('email');
                 $subject = $request->getPost('subject');
                 $message = $request->getPost('message');
 
-                $email->setFrom($myemail, $name);
+                $email->setFrom('_mainaccount@yegjuniordevs.ca');
                 $email->setTo('yegjdev@gmail.com');
 
                 $email->setSubject($subject);
-                $email->setMessage($message);
+                $email->setMessage($message . $myemail);
 
                 $email->send(false);
                 
