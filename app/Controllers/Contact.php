@@ -32,11 +32,9 @@ class Contact extends BaseController
                 $myemail = $request->getPost('email');
                 $subject = $request->getPost('subject');
                 $message = $request->getPost('message');
-                $recipeint = 'yegjdev@gmail.com';
 
                 $email->setFrom($myemail, $name);
-                $email->setTo($recipeint);
-                $email->setCC($recipeint);
+                $email->setTo('yegjdev@gmail.com');
 
                 $email->setSubject($subject);
                 $email->setMessage($message);
@@ -48,7 +46,7 @@ class Contact extends BaseController
                    
                     $data['result'] = 'Failed';
                     
-                    $data['debugger'] = $email->printDebugger();
+                    $data['debugger'] = $email->printDebugger(['headers']);
                 }else{ 
                     $data['result'] = 'Success';
                 }
