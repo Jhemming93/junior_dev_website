@@ -5,7 +5,7 @@
 </div>
 
 <div>
-    
+   
     <?= validation_list_errors('contact_list') ?>
     <?= form_open('contact') ?>
       <div class="mb-3">

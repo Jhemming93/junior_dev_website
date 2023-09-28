@@ -19,7 +19,6 @@ class Contact extends BaseController
     { 
             
             $validation = \Config\Services::validation();
-            
             $request = \Config\Services::request();
 
             if (! $this->request->is('post')){
@@ -54,11 +53,10 @@ class Contact extends BaseController
                    $data['result'] = 'Success';
                 }else{ 
                     $data['result'] = 'Failed';
-                    $data['debugger'] = $email->printDebugger();
                 }
 
                 return view('templates/header')
-                . view('pages/contact-success', $data)
+                . view('pages/contact-result', $data)
                 . view('templates/footer');
 
             }
