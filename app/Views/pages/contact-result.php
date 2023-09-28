@@ -1,7 +1,7 @@
 <?php $result = 'Success' ?>
 <div class="row justify-content-center align-items-center" style="height:100%;">
     <?php if(isset($result)): ?>
-        <div class="col justify-content-center">
+        <div class="col">
             <div style="max-width:500px;">
                 <img class="img-fluid" src="/img-defaults/placeholder.png"/>
             </div>
