@@ -28,6 +28,9 @@ class MainNavMenu
                 <a class="nav-link" href="/events">Events</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="/resources">Resources</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="/contact">Contact Us</a>
               </li>
               <li class="nav-item">
