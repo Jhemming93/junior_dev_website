@@ -1,8 +1,8 @@
 <?php $result = 'Success' ?>
 <div class="row justify-content-center align-items-center" style="height:100%;">
     <?php if(isset($result)): ?>
-        <div class="col">
-            <div>
+        <div class="col ">
+            <div class="d-flex justify-content-center" style="max-with:500px;">
                 <img class="img-fluid" src="/img-defaults/placeholder.png"/>
             </div>
         <?php if($result= 'Success'): ?>
