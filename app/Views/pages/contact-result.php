@@ -1,5 +1,5 @@
 <?php $result = 'Success' ?>
-<div class="row justify-content-center align-items-center" style="height:100%;">
+<div class="row justify-content-center align-items-center" style="height:90vh;">
     <?php if(isset($result)): ?>
         <div class="col">
             <div style="max-width:500px;">
