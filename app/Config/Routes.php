@@ -9,7 +9,7 @@ $routes->get('/', 'Home::index');
 
 
 
-
+$routes->get('events', 'Events:index');
 
 $routes->get('contact', 'Contact::index');
 $routes->post('contact', 'Contact::sendEmail');
