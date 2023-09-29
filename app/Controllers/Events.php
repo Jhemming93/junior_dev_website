@@ -2,7 +2,7 @@
 // need to test when the server is on live place
 namespace App\Controllers;
 
-class Resources extends BaseController
+class Events extends BaseController
 { 
     public function __construct(){
         // helper(['url']);
