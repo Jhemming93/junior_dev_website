@@ -16,8 +16,8 @@
     <script src="/js/jquery.min.js"></script>
 
     <!-- GC-Calendar Plugin Files -->
-    <link rel="stylesheet" href="<?= base_url('/css/calendar-gc.min.css');?>"/>
-    <script src="/js/calendar-gc.min.js"></script>
+    <link rel="stylesheet" href="/css/calendar-gc.css"/>
+    <script src="/js/calendar-gc.js"></script>
 
 </head>
 <body>
