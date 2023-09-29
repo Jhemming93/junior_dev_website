@@ -13,11 +13,11 @@
 
 
     <!-- jQuery Is Reqired -->
-    <script src="./js/jquery.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
 
     <!-- GC-Calendar Plugin Files -->
-    <link rel="stylesheet" href="./css/calendar-gc.min.css" />
-    <script src="./css/calendar-gc.min.js"></script>
+    <link rel="stylesheet" href="/css/calendar-gc.min.css" />
+    <script src="/js/calendar-gc.min.js"></script>
 
 </head>
 <body>
