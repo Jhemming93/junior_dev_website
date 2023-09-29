@@ -5,7 +5,7 @@ namespace App\Controllers;
 class Resources extends BaseController
 { 
     public function __construct(){
-        helper(['url']);
+        // helper(['url']);
     }
 
     public function index(){
