@@ -256,3 +256,5 @@ var gcObject = {
     return gcObject;
   };
 })(jQuery);
+
+console.log("nope")
