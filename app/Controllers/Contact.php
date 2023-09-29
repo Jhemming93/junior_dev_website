@@ -6,6 +6,7 @@ class Contact extends BaseController
 {
     public function __construct() {
         helper(['form', 'url']);
+        
     }
   
     public function index(){
@@ -16,8 +17,7 @@ class Contact extends BaseController
         
 
     public function sendEmail()
-    { 
-            
+    {       
             $validation = \Config\Services::validation();
             $request = \Config\Services::request();
 
@@ -60,16 +60,6 @@ class Contact extends BaseController
                 . view('templates/footer');
 
             }
-
-
-
-
-               
-                
-            
-
-            
-
             
         }
 }

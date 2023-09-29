@@ -12,6 +12,12 @@ use CodeIgniter\Config\Factories;
 
 class Auth extends BaseController{
 
+        public function __construcT(){
+            helper(['url', 'form']);
+              
+        }
+
+
         public function index(){}
 
         public function login(){
