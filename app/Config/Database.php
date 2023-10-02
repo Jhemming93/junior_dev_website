@@ -27,7 +27,7 @@ class Database extends Config
     public array $default = [
         'DSN'      => '',
         'hostname' => 'hnhofmn2.mywhc.ca',
-        'username' => 'hnhofmn2_jhemming1',
+        'username' => 'hnhofmn2_master',
         'password' => '()hdge]T^f&S',
         'database' => 'hnhofmn2_junior_devs_main_2.0',
         'DBDriver' => 'MySQLi',
