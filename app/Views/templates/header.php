@@ -18,7 +18,8 @@
 
     <!-- jQuery Is Reqired -->
     <script src="/js/jquery.min.js" type="text/javascript"></script>
-    <script src="/js/index.global.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js'></script>
+    <!-- <script src="/js/index.global.min.js"></script> -->
   
 
 
