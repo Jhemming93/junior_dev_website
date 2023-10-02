@@ -26,10 +26,10 @@ class Database extends Config
      */
     public array $default = [
         'DSN'      => '',
-        'hostname' => 'localhost',
-        'username' => 'root',
-        'password' => '',
-        'database' => 'junior_devs',
+        'hostname' => 'localhosthnhofmn2.mywhc.ca',
+        'username' => 'hnhofmn2_jhemming1',
+        'password' => '()hdge]T^f&S',
+        'database' => 'hnhofmn2_junior_devs_main_2.0',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
