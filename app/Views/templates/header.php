@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Edmonton Junior Devs</title>
-
+    
+    <script src="/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/js/index.global.min.js" type="text/javascript"></script>
     <!-- Bootstrap -->
     
     <link href="/css/custom.css" rel="stylesheet">
@@ -17,8 +19,7 @@
     <!-- <link href="/css/output.css" rel="stylesheet"/> -->
 
     <!-- jQuery Is Reqired -->
-    <script src="/js/jquery.min.js" type="text/javascript"></script>
-    <script src="/js/index.global.min.js" type="text/javascript"></script>
+    
   
   
 
