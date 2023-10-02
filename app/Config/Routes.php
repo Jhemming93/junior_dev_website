@@ -10,6 +10,8 @@ $routes->get('/', 'Home::index');
 
 
 $routes->get('events', 'Events::index');
+$routes->post('events', 'Events::newEvent');
+
 
 $routes->get('contact', 'Contact::index');
 $routes->post('contact', 'Contact::sendEmail');
