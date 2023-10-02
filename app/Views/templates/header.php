@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,18 +13,23 @@
     <link href="/css/custom.css" rel="stylesheet">
     <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
 
+    <!-- My Stylesheet & Javascript -->
+    <!-- <link href="/css/output.css" rel="stylesheet"/> -->
 
     <!-- jQuery Is Reqired -->
-    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/js/index.global.min.js"></script>
+  
 
-    <!-- GC-Calendar Plugin Files -->
-    <link rel="stylesheet" href="/css/calendar-gc.css"/>
-    <script src="/js/calendar-gc.js"></script>
 
 </head>
 <body>
     <div class="sticky-top bg-custom-prime-green">
-        <?= view_cell("MainNavMenu::show"); ?>
+      <?php if(! auth()->loggedIn()): ?>
+        <?= view_cell("MainNavMenuLogin::show"); ?>
+        <?php else: ?>
+        <?= view_cell("MainNavMenuLogout::show"); ?>
+        <?php endif; ?> 
     </div>
 
 <main class="container-xl mx-auto p-2" style="min-height: 90vh;">
