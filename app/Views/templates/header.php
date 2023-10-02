@@ -18,7 +18,7 @@
 
     <!-- jQuery Is Reqired -->
     <script src="/js/jquery.min.js" type="text/javascript"></script>
-    <script src="/js/index.global.min.js"></script>
+    <script src="/js/index.global.js"></script>
    <link href="https://cdn.jsdelivr.net/npm/@fullcalendar/core@4.4.2/main.min.css">
   
 
