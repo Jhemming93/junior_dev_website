@@ -71,7 +71,20 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 
 //custom code
+a {
+    text-decoration: none;
+}
+.fc-daygrid-day-top a {
+    text-decoration: none;
+    color: #000;
+}
 
+.fc-col-header-cell {
+    background-color: lightblue;
+}
+.fc-col-header-cell a {
+    color: #fff;
+}
 
 
 
