@@ -19,6 +19,7 @@
     <!-- jQuery Is Reqired -->
     <script src="/js/jquery.min.js" type="text/javascript"></script>
     <script src="/js/index.global.min.js"></script>
+    <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.7.1/fullcalendar.min.css'>
   
 
 
