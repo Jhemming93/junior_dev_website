@@ -3,9 +3,10 @@
 <div id="calendar"></div>
 
 
-<script type="text/javascript">       
+<script type="text/javascript">
+<?php if(isset($data)): ?>       
     var events = <?php echo json_encode($data) ?>;
-    
+<?php endif; ?>    
     document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
         
