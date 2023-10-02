@@ -13,7 +13,7 @@
         var calendarEl = document.getElementById('calendar');
         
         var options = {
-            plugins: 'bootstrap5Plugin',
+            themeSystem: 'bootstrap5',
             initialView: 'dayGridMonth',
             height: 'auto',
             contentHeight:'auto',
