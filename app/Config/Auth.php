@@ -109,7 +109,7 @@ class Auth extends ShieldAuth
      * @var array<string, class-string<ActionInterface>|null>
      */
     public array $actions = [
-        'register' => \CodeIgniter\Shield\Authentication\Actions\EmailActivator::class,
+        'register' => null,
         'login'    => null,
     ];
 
@@ -216,7 +216,7 @@ class Auth extends ShieldAuth
      * Specifies the amount of time, in seconds, that a magic link is valid.
      * You can use Time Constants or any desired number.
      */
-    public int $magicLinkLifetime = 300;
+    public int $magicLinkLifetime = HOUR;
 
     /**
      * --------------------------------------------------------------------
@@ -236,7 +236,7 @@ class Auth extends ShieldAuth
         'field'              => 'user',
         'allowRemembering'   => true,
         'rememberCookieName' => 'remember',
-        'rememberLength'     => 15 * DAY,
+        'rememberLength'     => 30 * DAY,
     ];
 
     /**

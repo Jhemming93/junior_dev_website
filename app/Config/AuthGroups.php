@@ -70,7 +70,6 @@ class AuthGroups extends ShieldAuthGroups
         'users.edit'          => 'Can edit existing non-admin users',
         'users.delete'        => 'Can delete existing non-admin users',
         'beta.access'         => 'Can access beta-level features',
-        'users.page-access'   => 'Has access to the page',
     ];
 
     /**
@@ -92,7 +91,6 @@ class AuthGroups extends ShieldAuthGroups
             'users.create',
             'users.edit',
             'users.delete',
-            'users.page-access',
             'beta.access',
         ],
         'developer' => [
@@ -100,12 +98,9 @@ class AuthGroups extends ShieldAuthGroups
             'admin.settings',
             'users.create',
             'users.edit',
-            'users.page-access',
             'beta.access',
         ],
-        'user' => [ 
-            'users.page-access'
-        ],
+        'user' => [],
         'beta' => [
             'beta.access',
         ],
