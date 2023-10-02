@@ -26,7 +26,7 @@ class Database extends Config
      */
     public array $default = [
         'DSN'      => '',
-        'hostname' => 'hnhofmn2.mywhc.ca',
+        'hostname' => 'localhost',
         'username' => 'hnhofmn2_master',
         'password' => '()hdge]T^f&S',
         'database' => 'hnhofmn2_junior_devs_main_2.0',
