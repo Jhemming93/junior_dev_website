@@ -8,9 +8,9 @@
 <div class="py-2">
    <h3 class="text-3xl font-bold text-center">What you can do on the site!</h3>
    <div class="d-flex flex-wrap justify-content-center">
-      <?= view_cell('NavCardCell', 'title=Portfolio Gallery, link=/portfolio, description=Check out Junior Developers Portfolios, image=img-defaults/portfolio-gallery.webp') ?>
-      <?= view_cell('NavCardCell', 'title=Events, link=/events, description=Check out the calendar for Upcoming Events, image=img-defaults/calendar.webp') ?>
-      <?= view_cell('NavCardCell', 'title=Register/Login, link=/login, description=Register a new Account or Login to an existing one, image=img-defaults/login.webp') ?>
-      <?= view_cell('NavCardCell', 'title=Contact Us, link=/contact, description=Reach out to us to see how you can get involved, image=img-defaults/contact.webp') ?>
+      <?= view_cell('NavCardCell', 'title=Portfolio Gallery, link=/portfolio, description=Check out Junior Developers Portfolios, image=img-defaults/portfolio-gallery.webp', 300); ?>
+      <?= view_cell('NavCardCell', 'title=Events, link=/events, description=Check out the calendar for Upcoming Events, image=img-defaults/calendar.webp'); ?>
+      <?= view_cell('NavCardCell', 'title=Register/Login, link=/login, description=Register a new Account or Login to an existing one, image=img-defaults/login.webp'); ?>
+      <?= view_cell('NavCardCell', 'title=Contact Us, link=/contact, description=Reach out to us to see how you can get involved, image=img-defaults/contact.webp'); ?>
    </div>
 </div>
