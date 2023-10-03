@@ -17,20 +17,30 @@ class NavCardCell extends Cell
         $this->computed = sprintf('%s - %s', $this->image, $this->description, $this->title, $this->link);
     }
 
-    // public function getComputedProperty(): string
-    // {
-    //     return $this->computed;
-    // }
+    public function getComputedProperty(): string
+    {
+        return $this->computed;
+    }
 
-    // public function getTypeProperty(): string
-    // {
-    //     return $this->type;
-    // }
+    public function getImageProperty(): string
+    {
+        return $this->image;
+    }
 
-    // public function getMessageProperty(): string
-    // {
-    //     return $this->message;
-    // }   
+    public function getDescriptionProperty(): string
+    {
+        return $this->description;
+    }
+    
+    public function getTitleProperty(): string
+    {
+        return $this->title;
+    }
+
+    public function getLinkProperty(): string
+    {
+        return $this->link;
+    }   
 
     
 }
