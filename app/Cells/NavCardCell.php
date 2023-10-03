@@ -6,8 +6,11 @@ use CodeIgniter\View\Cells\Cell;
 
 class NavCardCell extends Cell 
 {
-    public $image;
+   
+     public $image;
     public $description;
     public $title;
-    public $link;
+    public $link;   
+
+    
 }
