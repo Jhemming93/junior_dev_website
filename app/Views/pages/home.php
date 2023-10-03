@@ -1,7 +1,7 @@
 <div class="py-2">
    <h2 class="text-7xl text-center text-green p-2 font-bold">YEG Junior Devs</h2>
    <div class="d-flex justify-content-center">
-      <img class="img-fluid" src="/img-defaults/placeholder.png"/>
+      <img class="img-fluid" src="/img-defaults/main_banner.webp"/>
    </div>
    <p>Welcome to the Edmonton Junior Developer website. We are a sister group to the non-profit <a href="https://devedmonton.com/" target="blank" class="fw-bold text-decoration-none">Dev Edmonton Society</a>, with a focus on the Junior Developer community. We host events in partnership with tech companies like Showbie and Jobber, to expose junior developers to the community and companies to promising talent.</p>
    </div>
