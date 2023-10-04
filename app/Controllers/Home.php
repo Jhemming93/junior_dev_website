@@ -13,7 +13,7 @@ class Home extends BaseController
     { 
 
             return view('templates/header')
-            . view('pages/home',$data)
+            . view('pages/home')
             . view('templates/footer');
         }
 
